@@ -1,0 +1,10 @@
+digraph {
+	rankdir=LR
+	s1 [label="s1 (Skill of Team 1)" shape=circle]
+	s2 [label="s2 (Skill of Team 2)" shape=circle]
+	t [label="t (Skill Difference)" shape=circle]
+	y [label="y (Match Outcome)" shape=circle]
+	s1 -> t
+	s2 -> t
+	t -> y
+}

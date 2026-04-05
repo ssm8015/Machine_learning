@@ -1,0 +1,11 @@
+IPython
+copy
+gif
+math
+matplotlib
+networkx
+numpy
+pandas
+scipy
+sklearn
+time

@@ -1,0 +1,18 @@
+graph {
+	rankdir=LR
+	s1 [label=s1 shape=circle]
+	s2 [label=s2 shape=circle]
+	t [label=t shape=circle]
+	y [label=y shape=circle]
+	f_prior_s1 [label="f_prior(s1)" shape=square]
+	f_prior_s2 [label="f_prior(s2)" shape=square]
+	f_likelihood [label="f_likelihood(t | s1, s2)" shape=square]
+	f_result [label="f_result(y | t)" shape=square]
+	s1 -- f_prior_s1
+	s2 -- f_prior_s2
+	s1 -- f_likelihood
+	s2 -- f_likelihood
+	t -- f_likelihood
+	t -- f_result
+	y -- f_result
+}
